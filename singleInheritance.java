@@ -1,21 +1,18 @@
 
-class animal {
+class child {
 
-    void cat() {
-        System.out.println(" hello eat ");
-    }
-
+    String myName = "aaidan prajapat";
+    int myAge = 19;
 }
 
-class singleInheritance extends animal {
+class singleInheritance extends child {
 
-    void dog() {
-        System.out.println("hello dog ");
-    }
+    String fatherName = "dharm chand";
+    int fatherage = 45;
 
     public static void main(String[] args) {
-        singleInheritance d1 = new singleInheritance();
-        d1.cat();
-        d1.dog();
+        singleInheritance s1 = new singleInheritance();
+        System.out.println(s1.myName + "\t" + s1.myAge + "\n" + s1.fatherName + s1.fatherage
+        );
     }
 }
